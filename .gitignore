@@ -1,0 +1,5 @@
+*.pth
+*.jpg
+*.png
+__pycache__/
+checkpoints.zip
