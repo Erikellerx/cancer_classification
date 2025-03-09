@@ -1,4 +1,4 @@
-```markdown
+
 # Cancer Classification
 
 This repository contains code and resources for classifying cancer images into *Benign* or *Malignant* categories using various deep learning architectures. 
