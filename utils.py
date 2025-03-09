@@ -11,7 +11,6 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def load_images_glob(folder_path):
     images = []
-    # *.* will match any file extension; you can refine this if needed, e.g. "*.jpg" or "*.png"
     for file_path in tqdm(glob.glob(os.path.join(folder_path, "*.*"))):
         with Image.open(file_path) as img:
             # Convert to RGB just to standardize

@@ -94,7 +94,7 @@ def evaluation(model, test_loader, criterion):
     # Calculate metrics
     epoch_loss = running_loss / len(test_loader.dataset)
     epoch_acc = 100 * correct / total
-    f1 = f1_score(all_labels, all_preds, average='macro')  # Change average if needed
+    f1 = f1_score(all_labels, all_preds, average='macro')  
     precision = precision_score(all_labels, all_preds, average='macro')
     recall = recall_score(all_labels, all_preds, average='macro')
     
